@@ -1,0 +1,25 @@
+languageCode = "en-us"
+title = "Elixirscript"
+baseurl = "http://elixirscript.github.io"
+publishDir = "docs"
+theme = "hemingway2"
+description = "Elixirscript News"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[params]
+
+[params.highlight]
+style = "github"
+languages = ["elixir", "javascript"]
+
+[[params.social]]
+url = "https://github.com/elixirscript"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
+
