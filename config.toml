@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "Elixirscript"
-baseurl = "http://elixirscript.github.io"
+baseurl = "https://elixirscript.github.io"
 theme = "hemingway2"
 description = "Elixirscript News"
 
