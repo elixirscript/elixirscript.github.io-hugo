@@ -1,7 +1,6 @@
 languageCode = "en-us"
 title = "Elixirscript"
 baseurl = "http://elixirscript.github.io"
-publishDir = "docs"
 theme = "hemingway2"
 description = "Elixirscript News"
 
