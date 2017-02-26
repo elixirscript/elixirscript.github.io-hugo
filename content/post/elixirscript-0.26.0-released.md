@@ -10,15 +10,11 @@ This version of Elixirscript has a lot of major changes. Here are some of the ch
 
 ## Bundled output
 
-This release is the first release to bundle all modules into one JavaScript file. 
-The output will now include only the following:
-
-  * `Elixir.Bootstrap.js` - The Elixirscript bootstrapping JavaScript
-  * `Elixir.App.js`. - The bundled modules
+This release is the bundle all output into a single file. Now the only file output will be `Elixir.App.js.`
 
 ## Removed `@on_js_load`
 
-`@on_js_load` is no more. In order to start you application, you would do the following:
+`@on_js_load` is no more. To start an application, do the following:
 
 ```js
 //Note: An ES module example. Update for your module output of choice
@@ -28,8 +24,7 @@ const my_inital_args = [];
 Elixir.start(Elixir.MyApp, my_inital_args);
 ```
 
-This looks for a `start/2` function in the `MyApp` module. It tries to mimick the API of a normal
-Elixir Application.
+This looks for a `start/2` function in the `MyApp` module. It tries to mimick the API of a normal Elixir Application.
 
 ```elixir
   def start(type, args) do
@@ -38,8 +33,7 @@ Elixir Application.
 
 ## Removed `JS.import`
 
-`JS.import` is also no more. External JavaScript modules now must be defined in configuration.
-A new configuration, `js_modules` is where they go.
+`JS.import` is also no more. External JavaScript modules are now defined in configuration. A new configuration, `js_modules` is where they go.
 
 ```elixir
 js_modules: [
@@ -48,32 +42,8 @@ js_modules: [
 ]
 ```
 
-In the example above, both `React` and `ReactDOM` will be imported at the top of the bundled output.
-Each item can be a 2-tuple or a 3-tuple with the third element being a keyword list of options for the
-defined module output format.
+Elixirscript adds both `React` and `ReactDOM`  imports to the top of the bundled output. Each item must be 2-tuple or a 3-tuple. The third element is an optional keyword list of options.
 
+The CLI now has a `js-module` to support the above.
 
-## elixirscript.exs config file
-
-If you are using Elixirscript outside of a mix project, 
-you can still give it configuration using an `elixirscript.exs` file. The contents must be a keyword list
-with the exact same options are the elixir_script config defined in mix projects.
-
-```elixir
-#example elixirscript.exs file
-
-[ 
-  input: ["app/elixirscript"], 
-  output: "dist",
-  format: :common,
-  js_modules: [
-    {React, "react"},
-    {ReactDOM, "react-dom"}
-  ]
-]
-
-```
-
-The `elixirscript` CLI will look for an `elixirscript.exs` file in the current directory, 
-or you can specify one with the `-c` flag
-
+`elixirscript input/path -o output/path --js-module React:react --js-module ReactDOM:react-dom`
