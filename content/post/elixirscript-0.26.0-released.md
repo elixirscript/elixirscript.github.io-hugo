@@ -1,7 +1,6 @@
 +++
 date = "2017-02-25T16:46:24-06:00"
 title = "elixirscript 0.26.0 released"
-draft = true
 +++
 
 For a full list of changes, check out out the [changelog](https://github.com/elixirscript/elixirscript/blob/master/CHANGELOG.md).
