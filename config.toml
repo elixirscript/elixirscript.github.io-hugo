@@ -12,7 +12,7 @@ category = "categories"
 
 [params.highlight]
 style = "github"
-languages = ["elixir", "javascript"]
+languages = ["elixir", "javascript", "bash"]
 
 [[params.social]]
 url = "https://github.com/elixirscript"
