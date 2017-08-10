@@ -65,10 +65,12 @@ ElixirScript now only supports output of ES modules. This is mainly so that ther
 
 For more information regarding changes, please check the [changelog](https://github.com/elixirscript/elixirscript/blob/master/CHANGELOG.md).
 
-For more information on getting started with ElixirScript, check the [ElixirScript documentation](https://hexdocs.pm/elixir_script/ElixirScript.html)
+For more on getting started with ElixirScript, check the [ElixirScript documentation](https://hexdocs.pm/elixir_script/ElixirScript.html)
 
-For more information on FFI, and other things, check out the [FFI documentation](https://hexdocs.pm/elixir_script/ElixirScript.FFI.html)
+For more on FFI, and other things, check out the [FFI documentation](https://hexdocs.pm/elixir_script/ElixirScript.FFI.html)
 
-For more information on JavaScript Interoperability, check out the [JavaScript interoperability documentation](https://hexdocs.pm/elixir_script/JavaScriptInterop.md)
+For more on JavaScript Interoperability, check out the [JavaScript interoperability documentation](https://hexdocs.pm/elixir_script/JavaScriptInterop.md)
+
+For an example of an ElixirScript app, check out the [Todo Example App](https://github.com/elixirscript/todo-elixirscript)
 
 Finally, I want to give a great big thanks to the Elixir Core Team! Thanks for making the updates in Erlang and Elixir that allowed ElixirScript's progress to continue. And thank you for being available to answer questions and to give great advice!
