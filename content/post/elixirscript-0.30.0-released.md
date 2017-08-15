@@ -73,6 +73,6 @@ For more on getting started with ElixirScript, check the [ElixirScript documenta
 
 For more on FFI, and other things, check out the [FFI documentation](https://hexdocs.pm/elixir_script/ElixirScript.FFI.html)
 
-For more on JavaScript Interoperability, check out the [JavaScript interoperability documentation](https://hexdocs.pm/elixir_script/JavaScriptInterop.md)
+For more on JavaScript Interoperability, check out the [JavaScript interoperability documentation](https://hexdocs.pm/elixir_script/javascriptinterop.html)
 
 For an example of an ElixirScript app, check out the [Todo Example App](https://github.com/elixirscript/todo-elixirscript)
