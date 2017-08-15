@@ -1,10 +1,10 @@
 +++
 title = "ElixirScript 0.30.0 Released"
 date = 2017-08-15T00:29:03-05:00
-draft = true
+draft = false
 +++
 
-ElixirScript 0.30 is a large release with lots of changes. It includes a rewrite of the compiler, a change in JavaScript interoperability and much more. This is also the first version to require Erlang 20 and Elixir 1.5, compiled with Erlang 20. ElixirScript can compile your Elixir code and dependencies into JavaScript, with some [limitations](#limitations). These changes make this the best release of ElixirScript so far! This is a great point to give ElixirScript a try for yourself. This post will describe the major changes.
+[ElixirScript 0.30](https://hex.pm/packages/elixir_script) is a large release with lots of changes. It includes a rewrite of the compiler, a change in JavaScript interoperability and much more. This is also the first version to require Erlang 20 and Elixir 1.5, compiled with Erlang 20. ElixirScript can compile your Elixir code and dependencies into JavaScript, with some [limitations](#limitations). These changes make this the best release of ElixirScript so far! This is a great point to give ElixirScript a try for yourself. This post will describe the major changes.
 
 ## Foreign Function Interface (FFI)
 
