@@ -5,7 +5,7 @@ title = "using with phoenix"
 
 This guide will walk through setting up a Phoenix project with Elixirscript. This guide assumes you have already created a Phoenix project
 
-**Update: 2017-08-15**: This guide has been updated to cover both ElixirScript 0.30 and Phoenix 1.3
+**Update: 2018-05-21**: This guide has been updated to cover both ElixirScript 0.32 and Phoenix 1.3
 
 Update your mix.exs file to add the current version of elixirscript to your dependencies:
 
@@ -13,7 +13,7 @@ Update your mix.exs file to add the current version of elixirscript to your depe
   defp deps do
     [
       #other deps
-     {:elixir_script, "~> x.x"}
+     {:elixir_script, "~> 0.32"}
     ]
 ```
 
@@ -68,14 +68,14 @@ end
 Finally, update `assets/js/app.js` to start your Elixirscript app:
 
 ```javascript
-import Elixir from './build/elixirscript.build.js';
-Elixir.start(Elixir.MyApp.App, [])
+import App from './build/Elixir.MyApp.App.js';
+App.start(Symbol.for('normal'), []);
 ```
 
 The empty array is list of initial arguments for your app.
 
 
-If you run `mix compile`, you should see a JavaScript file, `elixirscript.build.js` in your `assets/js/build` directory.
+If you run `mix compile`, you should see a JavaScript file, `Elixir.MyApp.App.js` in your `assets/js/build` directory.
 
 If you run `mix phx.server`, open your browser, and then open your console, you should see `Hello, world`. Any changes should cause a recompilation of your ElixirScript code and a reload of the browser
 
